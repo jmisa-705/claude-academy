@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Create an IAM policy that grants read-only access to a specific S3 bucket named 'company-logs-2024' and all objects within it",
+    "format": "json",
+    "solution_criteria": "JSON contains valid IAM policy structure with Version, Statement array; Action includes s3:GetObject and s3:ListBucket; Resource specifies the correct bucket ARN and objects ARN pattern; Effect is Allow"
+  },
+  {
+    "task": "Write a regex pattern that validates AWS ARN format for S3 buckets, ensuring it starts with 'arn:aws:s3:::' followed by a valid bucket name",
+    "format": "regex",
+    "solution_criteria": "Regex matches valid S3 bucket ARNs like 'arn:aws:s3:::my-bucket' or 'arn:aws:s3:::my-bucket/*'; rejects invalid formats; handles bucket naming rules (lowercase, hyphens, 3-63 chars); anchored to match complete ARN"
+  },
+  {
+    "task": "Write a Python function that takes a list of EC2 instance dictionaries and returns only instances with state 'running' and tag 'Environment' equal to 'production'",
+    "format": "python",
+    "solution_criteria": "Function accepts a list parameter; correctly filters by checking State or state field equals 'running'; checks Tags array for key 'Environment' with value 'production'; returns filtered list; handles missing tags gracefully without errors"
+  }
+]
