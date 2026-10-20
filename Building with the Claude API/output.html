@@ -99,11 +99,11 @@
                 </div>
                 <div class="stat-box">
                     <div>Average Score</div>
-                    <div class="stat-value">4.7 / 10</div>
+                    <div class="stat-value">9.0 / 10</div>
                 </div>
                 <div class="stat-box">
                     <div>Pass Rate (≥7)</div>
-                    <div class="stat-value">33.3%</div>
+                    <div class="stat-value">100.0%</div>
                 </div>
             </div>
         </div>
@@ -122,273 +122,87 @@
             <tbody>
     
             <tr>
-                <td>Testing with a high-endurance athlete (marathon runner) requiring 3000+ calories with emphasis on carbohydrate loading and hydration strategy</td>
-                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 75 kg<br><strong>goal:</strong> Marathon preparation with carbohydrate loading and hydration strategy for high-endurance training<br><strong>restrictions:</strong> None</td>
-                <td class="criteria">• Meal plan totals 3000+ calories with carbohydrates comprising 55-65% of total intake<br>• Includes specific hydration strategy with fluid intake recommendations throughout the day<br>• Covers all three meals plus snacks in a single day format<br>• All meals and snacks are practical and realistically consumable by an athlete</td>
-                <td class="output"><pre># Marathon Preparation Meal Plan for 75kg Athlete
-
-## STEP 1: DAILY CALORIE CALCULATION
-
-**Basal Metabolic Rate (BMR):**
-- Using Mifflin-St Jeor: ~1,750 kcal/day
-
-**Activity Factor for Marathon Training:**
-- High-endurance training: 1.7-1.9 multiplier
-- **Total Daily Energy Expenditure: 3,150-3,325 kcal**
-
-**Recommended Intake: 3,200 kcal/day** (accounting for intense training sessions)
-
----
-
-## STEP 2: MACRONUTRIENT BREAKDOWN
-
-| Macronutrient | Amount | % of Calories |
-|---|---|---|
-| **Carbohydrates** | 520g | 65% (2,080 kcal) |
-| **Protein** | 113g | 14% (450 kcal) |
-| **Fat** | 71g | 21% (640 kcal) |
-
-*Rationale: High carbs support glycogen stores for endurance; adequate protein for recovery*
-
----
-
-## STEP 3 & 4: MEAL TIMING AROUND TRAINING
-
-**Assuming morning 90-minute run at 7:00 AM**
-
----
-
-## STEP 5 & 6: DETAILED ONE-DAY MEAL PLAN
-
-### **PRE-WORKOUT (6:00 AM - 1 hour before run)**
-**Purpose:** Quick energy without stomach distress
-
-| Food | Portion | Calories | Carbs | Protein | Fat |
-|---|---|---|---|---|---|
-| Banana | 120g (1 medium) | 107 | 27g | 1g | 0.3g |
-| White bread | 40g (1 slice) | 107 | 21g | 3g | 0.5g |
-| Honey | 15g (1 tbsp) | 64 | 17g | 0g | 0g |
-| Water | 500ml | 0 | 0 | 0 | 0 |
-
-**Meal Total: 278 kcal | 65g carbs | 4g protein | 0.8g fat**
-
----
-
-### **POST-WORKOUT RECOVERY (8:30 AM - within 30 min of finishing)**
-**Purpose:** Replenish glycogen + repair muscle
-
-| Food | Portion | Calories | Carbs | Protein | Fat |
-|---|---|---|---|---|---|
-| Chocolate milk (2%) | 500ml | 260 | 45g | 16g | 5g |
-| Granola bar | 40g | 160 | 25g | 4g | 5g |
-| Orange juice | 250ml | 110 | 26g | 2g | 0.5g |
-
-**Meal Total: 530 kcal | 96g carbs | 22g protein | 10.5g fat**
-
----
-
-### **BREAKFAST (9:30 AM - 1.5 hours after recovery drink)**
-**Purpose:** Sustained energy + muscle building
-
-| Food | Portion | Calories | Carbs | Protein | Fat |
-|---|---|---|---|---|---|
-| Oatmeal (cooked) | 80g dry | 300 | 54g | 10g | 5g |
-| Blueberries | 100g | 57 | 14g | 1g | 0.3g |
-| Whole milk | 200ml | 132 | 9.6g | 6.6g | 7.6g |
-| Honey | 10g | 32 | 8g | 0 | 0 |
-| Almonds | 20g | 120 | 4g | 4g | 10g |
-
-**Meal Total: 641 kcal | 89.6g carbs | 21.6g protein | 23g fat**
-
----
-
-### **MID-MORNING SNACK (12:00 PM)**
-**Purpose:** Sustained energy between meals
-
-| Food | Portion | Calories |</pre></td>
-                <td class="score-col"><span class="score score-low">3</span></td>
-                <td class="reasoning">The solution demonstrates strong methodology and structure with accurate caloric calculations and macronutrient ratios. However, it FAILS a mandatory requirement by being incomplete - it cuts off mid-snack without providing the full day's meals, making it impossible to verify the complete meal plan meets the criteria. More critically, it fails to address the explicit task requirement for a 'hydration strategy' - only 500ml of water is mentioned pre-workout with no comprehensive daily hydration recommendations despite this being a core goal for marathon preparation. The incomplete nature and missing hydration strategy are critical deficiencies that prevent this from meeting the mandatory requirements.</td>
+                <td>Testing with a passage containing implicit and explicit topics, where some topics are stated directly while others must be inferred from context, to ensure the prompt extracts both obvious and subtly embedded subjects</td>
+                <td class="prompt-inputs"><strong>content:</strong> The study of epigenetic mechanisms has revealed how environmental factors can modulate gene expression without altering DNA sequences, challenging the deterministic view of genetic inheritance. Through DNA methylation and histone modifications, organisms respond to nutritional stress, temperature fluctuations, and social hierarchies, suggesting that phenotypic plasticity operates at the molecular level. These findings have profound implications for understanding developmental biology, as the timing of environmental exposure during critical developmental windows appears to establish epigenetic patterns that persist across multiple generations. Furthermore, the intersection of epigenetics with evolutionary theory indicates that acquired traits may leave molecular signatures that influence offspring fitness, though the mechanisms of transgenerational inheritance remain incompletely understood.</td>
+                <td class="criteria">• Extracts explicit topics (epigenetic mechanisms, DNA methylation, histone modifications, gene expression, developmental biology)<br>• Captures inferred/implicit topics (phenotypic plasticity, environmental influence, transgenerational inheritance, evolutionary implications)<br>• Returns results as a JSON array of strings with no additional metadata or explanations</td>
+                <td class="output"><pre>```json
+[
+  "epigenetic mechanisms",
+  "gene expression",
+  "DNA sequences",
+  "genetic inheritance",
+  "DNA methylation",
+  "histone modifications",
+  "environmental factors",
+  "nutritional stress",
+  "temperature fluctuations",
+  "social hierarchies",
+  "phenotypic plasticity",
+  "developmental biology",
+  "critical developmental windows",
+  "transgenerational inheritance",
+  "evolutionary theory",
+  "acquired traits",
+  "offspring fitness"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it provides a valid JSON array of strings containing topics from the article, with no extra commentary, and returns only the JSON array. It successfully extracts both explicit topics (epigenetic mechanisms, DNA methylation, histone modifications, gene expression, developmental biology) and inferred topics (phenotypic plasticity, environmental influence, transgenerational inheritance, evolutionary implications). The extraction is thorough and well-balanced. Minor weaknesses exist in granularity and one missed implicit topic, but these do not violate mandatory requirements and represent only slight deficiencies in secondary criteria coverage.</td>
             </tr>
         
             <tr>
-                <td>Testing with a strength-based athlete (weightlifter) requiring balanced macros with high protein intake and specific meal timing around training sessions</td>
-                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 85 kg<br><strong>goal:</strong> Build muscle and increase strength through weightlifting training<br><strong>restrictions:</strong> None</td>
-                <td class="criteria">• Meal plan covers one full day with at least 4 meals/snacks<br>• Includes pre-workout and post-workout meals with appropriate timing<br>• Provides minimum 2.0g protein per kg bodyweight (170g total)<br>• Maintains balanced macronutrient distribution supporting strength training goals</td>
-                <td class="output"><pre># One-Day Meal Plan for Muscle-Building Athlete
-
-## Step 1: Daily Calorie Calculation
-
-**Using Mifflin-St Jeor Formula + Activity Factor:**
-- BMR = 1,792 kcal
-- Activity Factor (weightlifting 5-6x/week) = 1.55
-- **Total Daily Calories = 2,775 kcal**
-
----
-
-## Step 2: Macronutrient Breakdown
-
-| Macronutrient | Target | Grams |
-|---|---|---|
-| **Protein** | 1.8g per kg | 153g |
-| **Carbohydrates** | 5-6g per kg | 425g |
-| **Fat** | 0.8-1g per kg | 72g |
-
----
-
-## Step 3 & 4: Daily Meal Schedule
-
-### **BREAKFAST** - 7:00 AM (500 kcal)
-*Before or after morning cardio/before workout*
-
-| Food | Portion | Protein | Carbs | Fat |
-|---|---|---|---|---|
-| Oatmeal (dry) | 80g | 11g | 54g | 5g |
-| Whole Milk | 200ml | 7g | 10g | 7g |
-| Banana | 120g | 1g | 27g | 0g |
-| Honey | 20g | 0g | 17g | 0g |
-| **Totals** | | **19g** | **108g** | **12g** |
-
----
-
-### **PRE-WORKOUT SNACK** - 10:30 AM (250 kcal)
-*90 minutes before training*
-
-| Food | Portion | Protein | Carbs | Fat |
-|---|---|---|---|---|
-| White Rice (cooked) | 150g | 3g | 58g | 0g |
-| Apple | 150g | 0g | 39g | 0g |
-| **Totals** | | **3g** | **97g** | **0g** |
-
----
-
-### **LUNCH** - 1:00 PM (Post-Workout, 750 kcal)
-*Within 1-2 hours after training*
-
-| Food | Portion | Protein | Carbs | Fat |
-|---|---|---|---|---|
-| Grilled Chicken Breast | 250g | 55g | 0g | 5g |
-| Brown Rice (cooked) | 200g | 5g | 86g | 2g |
-| Olive Oil | 15ml | 0g | 0g | 14g |
-| Broccoli | 150g | 5g | 7g | 1g |
-| **Totals** | | **65g** | **93g** | **22g** |
-
----
-
-### **AFTERNOON SNACK** - 3:30 PM (300 kcal)
-
-| Food | Portion | Protein | Carbs | Fat |
-|---|---|---|---|---|
-| Greek Yogurt (plain) | 200g | 20g | 7g | 5g |
-| Granola | 40g | 8g | 30g | 8g |
-| Blueberries | 100g | 1g | 21g | 0g |
-| **Totals** | | **29g** | **58g** | **13g** |
-
----
-
-### **DINNER** - 6:30 PM (675 kcal)
-
-| Food | Portion | Protein | Carbs | Fat |
-|---|---|---|---|---|
-| Ground Beef (90/10) | 200g | 26g | 0g | 15g |
-| Sweet Potato (baked) | 250g | 4g | 58g | 0g |
-| Spinach (cooked) | 100g | 3g | 3g | 0g |
-| Olive Oil | 10ml | 0g | 0g | 10g |
-| **Totals** | | **33g** | **61g** | **25</pre></td>
-                <td class="score-col"><span class="score score-medium">7</span></td>
-                <td class="reasoning">The solution demonstrates strong understanding of sports nutrition principles and meets all mandatory requirements in its completed sections. The caloric calculation using Mifflin-St Jeor formula is appropriate, macronutrient targets are well-justified for muscle building, and meal timing aligns with training principles. However, the solution has a critical flaw: it is literally incomplete, cutting off during the dinner macronutrient row. While the first four meals/snacks are fully detailed and properly formatted, this incompleteness prevents full verification of whether daily totals are achieved. The protein target of 153g exceeds the 170g minimum requirement (actually 2.0g × 85kg = 170g, so this is slightly under at 1.8g/kg, though still substantial). Despite the incomplete ending, the core content that is present fully satisfies the mandatory requirements and secondary criteria for the meals that are complete.</td>
+                <td>Testing with interdisciplinary passage containing mixed domain topics (biology, chemistry, and environmental science) to verify the prompt can identify and separate distinct subject areas without conflating related concepts</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in photosynthetic efficiency have been achieved through modifications to the Calvin cycle, wherein researchers engineered RuBisCO enzyme variants that increase CO2 fixation rates by 18%. Simultaneously, studies on chlorophyll biosynthesis pathways reveal that magnesium chelation chemistry plays a critical role in light-harvesting complex assembly. These biological improvements directly impact carbon sequestration in terrestrial ecosystems, as enhanced photosynthetic capacity in crop species could significantly reduce atmospheric CO2 concentrations. Furthermore, the interaction between soil microbial communities and plant root systems demonstrates how biochemical signaling through secondary metabolites influences nutrient bioavailability and ecosystem productivity.</td>
+                <td class="criteria">• Extracts all distinct topics spanning biology (photosynthesis, enzyme engineering, chlorophyll biosynthesis), chemistry (magnesium chelation, secondary metabolites), and environmental science (carbon sequestration, ecosystem productivity) without conflating related concepts<br>• Returns output as a valid JSON array of strings<br>• Identifies topics at appropriate granularity without over-segmentation or under-segmentation</td>
+                <td class="output"><pre>```json
+[
+  "photosynthetic efficiency",
+  "Calvin cycle",
+  "RuBisCO enzyme",
+  "CO2 fixation",
+  "chlorophyll biosynthesis",
+  "magnesium chelation chemistry",
+  "light-harvesting complex assembly",
+  "carbon sequestration",
+  "terrestrial ecosystems",
+  "crop species",
+  "atmospheric CO2 concentrations",
+  "soil microbial communities",
+  "plant root systems",
+  "biochemical signaling",
+  "secondary metabolites",
+  "nutrient bioavailability",
+  "ecosystem productivity"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array containing only strings with topic names and no extra commentary. Regarding secondary criteria, it successfully extracts distinct topics spanning all three disciplines mentioned (biology, chemistry, environmental science) without conflating related concepts. The granularity is well-calibrated - topics like 'RuBisCO enzyme' and 'Calvin cycle' are appropriately separated as distinct concepts, while 'magnesium chelation chemistry' is kept as a single unit rather than over-segmented. The extraction captures both specific mechanisms (enzyme variants, chelation chemistry) and broader concepts (ecosystem productivity, carbon sequestration). The solution demonstrates strong understanding of topic extraction at appropriate levels of abstraction.</td>
             </tr>
         
             <tr>
-                <td>Testing with a sport-specific athlete (soccer player) with dietary restrictions (vegetarian) requiring compact meals that won't cause digestive discomfort during competition</td>
-                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 75 kg<br><strong>goal:</strong> Pre-match fueling and recovery for soccer competition<br><strong>restrictions:</strong> Vegetarian, no dairy 2 hours before match</td>
-                <td class="criteria">• Meal plan contains exactly 3 meals that are compact and easily digestible<br>• All meals are vegetarian and comply with dairy timing restriction<br>• Meals are appropriately timed around soccer competition and include carbohydrates for energy and protein for recovery</td>
-                <td class="output"><pre># One-Day Pre-Match Meal Plan for Soccer Player
-
-## Step 1: Daily Calorie Calculation
-
-**Athlete Profile:**
-- Height: 180 cm, Weight: 75 kg
-- Activity Level: High (soccer competition day)
-- Formula: BMR (Mifflin-St Jeor) × Activity Factor
-
-**BMR:** 75 × 10 + 180 × 6.25 - 5 × 23 = **1,740 calories**
-**Daily Total (with competition):** 1,740 × 1.7 = **2,958 calories**
-
----
-
-## Step 2: Macronutrient Breakdown
-
-| Macronutrient | Amount | Calories |
-|---|---|---|
-| **Protein** | 135g (1.8g/kg) | 540 cal (18%) |
-| **Carbohydrates** | 396g (5.3g/kg) | 1,584 cal (54%) |
-| **Fat** | 110g (1.5g/kg) | 990 cal (33%) |
-
----
-
-## Step 3: Match-Day Meal Timing
-
-| Meal | Time | Purpose |
-|---|---|---|
-| **Breakfast** | 7:00 AM | Foundation fuel |
-| **Mid-Morning Snack** | 10:00 AM | Energy top-up |
-| **Lunch** | 12:30 PM | Pre-match carbs |
-| **Pre-Match Snack** | 2:5 PM (2 hrs before) | Easy digestion |
-| **Post-Match** | 5:30 PM | Recovery |
-| **Dinner** | 7:00 PM | Repair & recovery |
-
----
-
-## Step 4-6: Complete Daily Meal Plan
-
-### **BREAKFAST** (7:00 AM)
-*Fuels morning training*
-
-| Food | Portion | Protein | Carbs | Fat |
-|---|---|---|---|---|
-| Oatmeal (dry) | 80g | 11g | 54g | 5g |
-| Banana | 120g | 1.3g | 27g | 0.3g |
-| Almond butter | 30g | 10.3g | 6g | 18g |
-| Coconut milk | 200ml | 2g | 3g | 17g |
-| **Subtotal** | | **24.6g** | **90g** | **40.3g** |
-
-**Calories: 684**
-
----
-
-### **MID-MORNING SNACK** (10:00 AM)
-*Energy sustainer*
-
-| Food | Portion | Protein | Carbs | Fat |
-|---|---|---|---|---|
-| Whole wheat toast | 60g | 6g | 40g | 2g |
-| Tahini | 15g | 4.7g | 2.5g | 9g |
-| Orange | 150g | 1.5g | 15g | 0.2g |
-| **Subtotal** | | **12.2g** | **57.5g** | **11.2g** |
-
-**Calories: 360**
-
----
-
-### **LUNCH** (12:30 PM)
-*Major pre-match carb load*
-
-| Food | Portion | Protein | Carbs | Fat |
-|---|---|---|---|---|
-| Brown rice (cooked) | 250g | 6.3g | 54g | 2.5g |
-| Lentil curry | 150g | 18g | 35g | 6g |
-| Spinach (cooked) | 100g | 3.6g | 3.6g | 0.4g |
-| Olive oil (cooking) | 10ml | 0g | 0g | 10g |
-| **Subtotal** | | **27.9g** | **92.6g** | **18.9g** |
-
-**Calories: 656**
-
----
-
-### **PRE-MATCH SNACK** (2:45 PM - 2 hours before match)
-*Dairy</pre></td>
-                <td class="score-col"><span class="score score-low">4</span></td>
-                <td class="reasoning">The solution demonstrates strong nutritional knowledge and includes all mandatory requirements in the portions that are complete. However, it fails the secondary criteria in two critical ways: (1) it is truncated and incomplete, providing only partial information for the Pre-Match Snack and entirely omitting Post-Match and Dinner meals, and (2) it violates the explicit criterion requiring 'exactly 3 meals' by planning 6 eating occasions. While the work shown is high-quality, the incomplete delivery and structural mismatch with stated criteria are significant deficiencies. The solution cannot be fully evaluated against all criteria due to its truncation.</td>
+                <td>Testing with a passage containing overlapping or hierarchical topics (e.g., 'machine learning,' 'deep learning,' and 'neural networks') to verify the prompt handles topic granularity appropriately and doesn't over-simplify or over-complicate the topic hierarchy</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in artificial intelligence have been driven by significant progress in machine learning, particularly through the development of deep learning architectures. Deep learning models, especially those based on neural networks, have revolutionized computer vision and natural language processing. Convolutional neural networks excel at image recognition tasks, while recurrent neural networks are particularly effective for sequential data analysis. These neural network approaches represent a subset of the broader machine learning field, which encompasses various statistical and algorithmic techniques for pattern recognition and predictive modeling. The hierarchical nature of these technologies—from general machine learning principles down to specific neural network implementations—has enabled breakthrough applications in autonomous systems and medical image diagnosis.</td>
+                <td class="criteria">• Extracts all distinct topics at appropriate granularity levels (e.g., 'machine learning,' 'deep learning,' 'neural networks,' 'convolutional neural networks,' 'recurrent neural networks')<br>• Recognizes and preserves hierarchical relationships without collapsing related concepts into a single overly-broad topic<br>• Returns output as a valid JSON array of strings<br>• Avoids duplicates while capturing both parent topics and their specialized subtopics</td>
+                <td class="output"><pre>```json
+[
+  "artificial intelligence",
+  "machine learning",
+  "deep learning",
+  "neural networks",
+  "computer vision",
+  "natural language processing",
+  "convolutional neural networks",
+  "image recognition",
+  "recurrent neural networks",
+  "sequential data analysis",
+  "pattern recognition",
+  "predictive modeling",
+  "autonomous systems",
+  "medical image diagnosis"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array containing only topic strings with no extra commentary. It excels at the secondary criteria by maintaining appropriate granularity levels and preserving hierarchical relationships between related concepts. The extraction captures both broad concepts (artificial intelligence, machine learning) and specific implementations (convolutional neural networks, recurrent neural networks), demonstrating sophisticated understanding of topic hierarchy. The list is complete, well-organized, and contains no duplicates. The only minor gap is the omission of 'statistical and algorithmic techniques' as a standalone topic, though this is a very minor issue given the comprehensive nature of the extraction.</td>
             </tr>
         
             </tbody>

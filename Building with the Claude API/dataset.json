@@ -1,49 +1,39 @@
 [
   {
     "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "75 kg",
-      "goal": "Marathon preparation with carbohydrate loading and hydration strategy for high-endurance training",
-      "restrictions": "None"
+      "content": "The study of epigenetic mechanisms has revealed how environmental factors can modulate gene expression without altering DNA sequences, challenging the deterministic view of genetic inheritance. Through DNA methylation and histone modifications, organisms respond to nutritional stress, temperature fluctuations, and social hierarchies, suggesting that phenotypic plasticity operates at the molecular level. These findings have profound implications for understanding developmental biology, as the timing of environmental exposure during critical developmental windows appears to establish epigenetic patterns that persist across multiple generations. Furthermore, the intersection of epigenetics with evolutionary theory indicates that acquired traits may leave molecular signatures that influence offspring fitness, though the mechanisms of transgenerational inheritance remain incompletely understood."
     },
     "solution_criteria": [
-      "Meal plan totals 3000+ calories with carbohydrates comprising 55-65% of total intake",
-      "Includes specific hydration strategy with fluid intake recommendations throughout the day",
-      "Covers all three meals plus snacks in a single day format",
-      "All meals and snacks are practical and realistically consumable by an athlete"
+      "Extracts explicit topics (epigenetic mechanisms, DNA methylation, histone modifications, gene expression, developmental biology)",
+      "Captures inferred/implicit topics (phenotypic plasticity, environmental influence, transgenerational inheritance, evolutionary implications)",
+      "Returns results as a JSON array of strings with no additional metadata or explanations"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 3000+ calories with emphasis on carbohydrate loading and hydration strategy"
+    "task_description": "\"\n    Extract topics out of passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a passage containing implicit and explicit topics, where some topics are stated directly while others must be inferred from context, to ensure the prompt extracts both obvious and subtly embedded subjects"
   },
   {
     "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "85 kg",
-      "goal": "Build muscle and increase strength through weightlifting training",
-      "restrictions": "None"
+      "content": "Recent advances in photosynthetic efficiency have been achieved through modifications to the Calvin cycle, wherein researchers engineered RuBisCO enzyme variants that increase CO2 fixation rates by 18%. Simultaneously, studies on chlorophyll biosynthesis pathways reveal that magnesium chelation chemistry plays a critical role in light-harvesting complex assembly. These biological improvements directly impact carbon sequestration in terrestrial ecosystems, as enhanced photosynthetic capacity in crop species could significantly reduce atmospheric CO2 concentrations. Furthermore, the interaction between soil microbial communities and plant root systems demonstrates how biochemical signaling through secondary metabolites influences nutrient bioavailability and ecosystem productivity."
     },
     "solution_criteria": [
-      "Meal plan covers one full day with at least 4 meals/snacks",
-      "Includes pre-workout and post-workout meals with appropriate timing",
-      "Provides minimum 2.0g protein per kg bodyweight (170g total)",
-      "Maintains balanced macronutrient distribution supporting strength training goals"
+      "Extracts all distinct topics spanning biology (photosynthesis, enzyme engineering, chlorophyll biosynthesis), chemistry (magnesium chelation, secondary metabolites), and environmental science (carbon sequestration, ecosystem productivity) without conflating related concepts",
+      "Returns output as a valid JSON array of strings",
+      "Identifies topics at appropriate granularity without over-segmentation or under-segmentation"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a strength-based athlete (weightlifter) requiring balanced macros with high protein intake and specific meal timing around training sessions"
+    "task_description": "\"\n    Extract topics out of passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with interdisciplinary passage containing mixed domain topics (biology, chemistry, and environmental science) to verify the prompt can identify and separate distinct subject areas without conflating related concepts"
   },
   {
     "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "75 kg",
-      "goal": "Pre-match fueling and recovery for soccer competition",
-      "restrictions": "Vegetarian, no dairy 2 hours before match"
+      "content": "Recent advances in artificial intelligence have been driven by significant progress in machine learning, particularly through the development of deep learning architectures. Deep learning models, especially those based on neural networks, have revolutionized computer vision and natural language processing. Convolutional neural networks excel at image recognition tasks, while recurrent neural networks are particularly effective for sequential data analysis. These neural network approaches represent a subset of the broader machine learning field, which encompasses various statistical and algorithmic techniques for pattern recognition and predictive modeling. The hierarchical nature of these technologies\u2014from general machine learning principles down to specific neural network implementations\u2014has enabled breakthrough applications in autonomous systems and medical image diagnosis."
     },
     "solution_criteria": [
-      "Meal plan contains exactly 3 meals that are compact and easily digestible",
-      "All meals are vegetarian and comply with dairy timing restriction",
-      "Meals are appropriately timed around soccer competition and include carbohydrates for energy and protein for recovery"
+      "Extracts all distinct topics at appropriate granularity levels (e.g., 'machine learning,' 'deep learning,' 'neural networks,' 'convolutional neural networks,' 'recurrent neural networks')",
+      "Recognizes and preserves hierarchical relationships without collapsing related concepts into a single overly-broad topic",
+      "Returns output as a valid JSON array of strings",
+      "Avoids duplicates while capturing both parent topics and their specialized subtopics"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a sport-specific athlete (soccer player) with dietary restrictions (vegetarian) requiring compact meals that won't cause digestive discomfort during competition"
+    "task_description": "\"\n    Extract topics out of passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a passage containing overlapping or hierarchical topics (e.g., 'machine learning,' 'deep learning,' and 'neural networks') to verify the prompt handles topic granularity appropriately and doesn't over-simplify or over-complicate the topic hierarchy"
   }
 ]
